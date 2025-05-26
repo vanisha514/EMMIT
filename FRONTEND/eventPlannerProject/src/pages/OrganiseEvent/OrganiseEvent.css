@@ -1,0 +1,221 @@
+.formDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #c7e2ff,
+    #a0c4ff
+  ); /* matching EMMIT theme */
+  width: 600px;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.formDiv form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Headings */
+.formDiv h3,
+.formDiv h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #062644;
+}
+
+.eventTypediv {
+  /* margin-top: 20px; */
+  padding: 20px;
+  border-radius: 20px;
+  color: #062644;
+  text-align: left;
+}
+
+.eventTypediv h4 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #062644;
+  text-align: center;
+}
+
+.eventTypedivinput {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.eventTypedivinput input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.eventTypedivinput label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Input fields */
+.formDiv input[type="text"],
+.formDiv input[type="date"],
+.formDiv input[type="url"] {
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 2px solid #305c79;
+  border-radius: 30px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.formDiv input[type="text"]:focus,
+.formDiv input[type="date"]:focus,
+.formDiv input[type="url"]:focus {
+  border-color: #24a3de;
+  box-shadow: 0 0 10px #24a3de;
+}
+
+/* Theme fields */
+.eventThemediv input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Mode radio buttons in one line */
+.eventModediv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eventModediv h3 {
+  margin-bottom: 10px;
+}
+.eventModediv label {
+  font-size: 18px;
+  margin: 0 15px;
+  color: #062644;
+}
+.eventModediv input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+.eventModediv .radio-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button */
+.formDiv button {
+  margin-top: 20px;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #062644;
+  color: #ffffff;
+  border: 2px solid #062644;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formDiv button:hover {
+  background-color: #305c79;
+  border-color: #24a3de;
+}
+
+/* Individual sections */
+.eventNamediv input,
+.eventDescriptiondiv input,
+.eventRulesdiv input,
+.eventHostnamediv input,
+.eventHostemaildiv input,
+.eventRegistrationcostdiv input,
+.eventLinkDiv input {
+  width: 100%;
+}
+
+/* Media Query */
+/* ----------- Large Screens (min-width: 1200px) ----------- */
+@media (min-width: 1200px) {
+  .formDiv {
+    width: 600px;
+    padding: 40px;
+  }
+}
+
+/* ----------- Medium Screens (768px - 1199px) ----------- */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .formDiv {
+    width: 90%;
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .eventTypedivinput {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .eventModediv .radio-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+/* ----------- Small Tablets & Mobiles (max-width: 767px) ----------- */
+@media (max-width: 767px) {
+  .formDiv {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .formDiv h3,
+  .formDiv h4 {
+    font-size: 20px;
+  }
+
+  .eventTypediv h4 {
+    font-size: 22px;
+  }
+
+  .eventTypedivinput {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .eventModediv label {
+    font-size: 16px;
+  }
+
+  .eventModediv .radio-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .formDiv input[type="text"],
+  .formDiv input[type="date"],
+  .formDiv input[type="url"] {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .formDiv button {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+}

@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+  --blue: #1a4f76;
+  --back: #1a4f76;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #041b2c, #0d426e);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 700;
+  background: linear-gradient(to right, #fff7e1, #e1faff, #3083ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1080px;
+  height: 62px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+nav ul a {
+  text-decoration: none !important;
+  font-size: 20px;
+  color: var(--white);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--white);
+  transition: width 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #216fd5;
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+.Loginsignup-btn {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.login-btn,
+.signup-btn {
+  font-size: 18px;
+  border-radius: 24px;
+  font-weight: 600;
+  padding: 12px 26px;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.login-btn:hover {
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+
+.signup-btn {
+  border: 1px solid var(--black);
+  color: var(--black);
+  background: linear-gradient(to right, #fff7e1, #e1faff, #3083ff);
+}
+
+.signup-btn:hover {
+  background: linear-gradient(to right, #3083ff, #e1faff, #fff7e1);
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px; /* reduced from 40px */
+  padding: 0 16px;
+  margin: 60px auto 0; /* reduced from 100px */
+  max-width: 1280px;
+  min-height: calc(100vh - 72px);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: linear-gradient(to right, #fff7e1, #e1faff, #3083ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  flex: 1 1 500px;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 92px;
+  margin-left: 30px;
+}
+
+.hero-content p {
+  font-size: 25px;
+  max-width: 1000px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-left: 30px;
+}
+
+.getstart-btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 16px;
+  border: 1.5px solid white;
+  border-radius: 24px;
+}
+
+.getstart-btn input {
+  width: 100%;
+  height: 45px;
+  border-radius: 24px;
+  background: linear-gradient(to right, #0e2234, #0e1825);
+  border: 1px solid #0e1825;
+  padding: 0 20px;
+  font-size: 15px;
+  color: #ffffff;
+  outline: none;
+  font-weight: 600;
+}
+
+.getstart-btn input::placeholder {
+  color: #aaa;
+}
+
+.getstart-btn button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 24px;
+  background: linear-gradient(to right, #fff7e1, #e1faff, #3083ff);
+  border: 1px solid var(--black);
+  color: var(--black);
+  padding: 12px 26px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.setting {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.setting img {
+  width: 80%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+}
+
+.waveline {
+  position: absolute;
+  left: 900px;
+  top: 160px;
+  height: calc(100vh - 500px);
+  z-index: -1;
+}
+
+.waveline img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.Login-btn {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.Login-btn a {
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+.Login-btn a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--white);
+  transition: width 0.3s ease;
+}
+
+.Login-btn a:hover {
+  color: #216fd5;
+}
+
+.Login-btn a:hover::after {
+  width: 100%;
+}
+
+/* Media query */
+/* For screens 1200px and below (Large Tablets / Small Laptops) */
+@media (max-width: 1200px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0 16px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-content h2 {
+    font-size: 45px;
+    line-height: 60px;
+    margin-left: 0;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+    margin-left: 0;
+    max-width: 600px;
+  }
+
+  .setting {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .setting img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .waveline {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.3;
+  }
+
+  .waveline img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .getstart-btn {
+    max-width: 400px;
+  }
+}
+
+/* For screens 768px and below (Tablets) */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .getstart-btn input {
+    font-size: 14px;
+  }
+
+  .getstart-btn button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .Loginsignup-btn {
+    justify-content: center;
+  }
+
+  .setting img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .waveline {
+    display: none;
+  }
+}
+
+/* For screens 600px and below (Phones) */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .getstart-btn {
+    flex-direction: column;
+  }
+
+  .getstart-btn input {
+    height: 42px;
+    padding: 0 16px;
+  }
+
+  .getstart-btn button {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Extra Small Devices - Below 480px (small phones) */
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .getstart-btn input {
+    font-size: 13px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul a {
+    font-size: 18px;
+  }
+}

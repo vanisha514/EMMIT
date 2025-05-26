@@ -1,0 +1,162 @@
+/* Feature Hackathons section */
+.Feature-hackathons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.feature-hackathon-1,
+.feature-hackathon-2 {
+  flex: 1;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #2d3748;
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  color: #edf2f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-size: 16px;
+  color: #a0aec0;
+  margin-top: 10px;
+}
+
+/* Heading for Open Hackathons */
+.open-heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Styling for Hackathon Cards section */
+.Open-hackathons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.Upcoming-hackathons,
+.Past-hackathons {
+  max-width: 1280px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Media Query */
+/* 🔹 Small screens: Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .Feature-hackathons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .feature-hackathon-1,
+  .feature-hackathon-2 {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+  }
+
+  .open-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .Open-hackathons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+/* 🔸 Medium screens: Tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Feature-hackathons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .feature-hackathon-1,
+  .feature-hackathon-2 {
+    flex: 1 1 48%;
+    height: auto;
+  }
+
+  .feature-title {
+    font-size: 22px;
+  }
+
+  .open-heading {
+    font-size: 32px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .Open-hackathons {
+    justify-content: space-around;
+  }
+}
+
+/* 🔹 Large screens: Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .Feature-hackathons {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature-hackathon-1,
+  .feature-hackathon-2 {
+    height: 300px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .open-heading {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

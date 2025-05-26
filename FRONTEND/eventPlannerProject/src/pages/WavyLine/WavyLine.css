@@ -1,0 +1,67 @@
+/* WavyLine.css */
+.wavy-line-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.wavy-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  background: linear-gradient(
+    to right,
+    #811d1d,
+    #138547
+  ); /* Wavy line background */
+  animation: wave 5s infinite linear; /* Animation */
+}
+.shivam {
+  background-color: violet;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(50%) scaleY(1);
+  }
+  50% {
+    transform: translateX(0) scaleY(1);
+  }
+  100% {
+    transform: translateX(50%) scaleY(1);
+  }
+}
+
+/* media query */
+/* 🔹 Small screens: Mobile (up to 600px) */
+@media (max-width: 600px) {
+  .wavy-line {
+    height: 50px; /* Shorter wave for small screens */
+    animation-duration: 7s; /* Slower for performance */
+  }
+
+  .shivam {
+    background-color: plum; /* Optional override for small screens */
+  }
+}
+
+/* 🔸 Medium screens: Tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .wavy-line {
+    height: 75px;
+    animation-duration: 6s;
+  }
+}
+
+/* 💻 Large screens: Desktops (1025px and up) */
+@media (min-width: 1025px) {
+  .wavy-line {
+    height: 100px;
+    animation-duration: 5s;
+  }
+}

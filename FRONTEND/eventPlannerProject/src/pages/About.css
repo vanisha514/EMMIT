@@ -1,0 +1,94 @@
+.about-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #041b2c, #0d426e);
+  text-align: center;
+  padding: 180px 20px;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 100px;
+  color: white;
+}
+
+.about-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #8cadde;
+  margin: 10px 0;
+}
+
+.about-header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.Loginsignup-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.login-btn,
+.signup-btn {
+  font-size: 18px;
+  border-radius: 24px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border: 1px solid #fff;
+  background: linear-gradient(to right, #fff7e1, #e1faff, #3083ff);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background: linear-gradient(to right, #3083ff, #e1faff, #fff7e1);
+  transform: scale(1.05);
+  color: black;
+}
+
+.about-paragraph {
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px auto;
+  color: #f0f0f0;
+}
+
+.about-list {
+  max-width: 900px;
+  text-align: left;
+  margin: 20px auto;
+  padding-left: 20px;
+  color: #e6e6e6;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #8cadde;
+  margin-top: 40px;
+}
+
+hr {
+  width: 100vw;
+  height: 2px;
+  background: #8cadde;
+  margin: 60px 0;
+  border: none;
+}
